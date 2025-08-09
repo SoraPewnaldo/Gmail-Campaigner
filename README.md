@@ -8,16 +8,16 @@
   <a href="https://www.python.org/"><img alt="Python" src="https://img.shields.io/badge/Python-3.9%2B-blue.svg"></a>
   <a href="https://developers.google.com/gmail/api"><img alt="Gmail API" src="https://img.shields.io/badge/Google-Gmail%20API-red.svg"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
-  <a href="https://github.com/E:\Mailing automation\Github version/actions"><img alt="CI" src="https://img.shields.io/badge/CI-none-lightgrey.svg"></a>
-  <a href="https://github.com/E:\Mailing automation\Github version/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/E:\Mailing automation\Github version?style=social"></a>
-  <a href="https://github.com/E:\Mailing automation\Github version/issues"><img alt="Issues" src="https://img.shields.io/github/issues/E:\Mailing automation\Github version"></a>
+  <a href="https://github.com/SoraPewnaldo/Gmail-Campaigner/actions"><img alt="CI" src="https://img.shields.io/badge/CI-none-lightgrey.svg"></a>
+  <a href="https://github.com/SoraPewnaldo/Gmail-Campaigner/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SoraPewnaldo/Gmail-Campaigner?style=social"></a>
+  <a href="https://github.com/SoraPewnaldo/Gmail-Campaigner/issues"><img alt="Issues" src="https://img.shields.io/github/issues/SoraPewnaldo/Gmail-Campaigner"></a>
   <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
   <img alt="Made with love" src="https://img.shields.io/badge/made%20with-%E2%9D%A4%EF%B8%8F-ff69b4.svg">
 </p>
 
 ---
 
-# Free Gmail Campaigner
+# Free Gmail Campaigner (GitHub-Safe)
 
 Lightweight Gmail outreach sender using Gmail API + HTML templates.
 
@@ -29,34 +29,33 @@ Lightweight Gmail outreach sender using Gmail API + HTML templates.
 
 ## Quick Start
 1. **Clone repo** and install deps:
-   ```bash
-   pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib python-dateutil
-   ```
-2. **Create Google OAuth credentials:**
-   - Google Cloud Console → Enable **Gmail API**
-   - Create **OAuth Client ID** (Desktop app)
-   - Download as **credentials.json** and place next to `main.py` (not tracked by git)
-3. **Copy config template** and edit:
-   ```bash
-   cp config.sample.json config.json
-   ```
-   - Set `FROM_NAME`, `FROM_EMAIL`
-   - Set `WEBAPP_URL` if using tracking (see below)
-4. **Prepare data files** (not tracked by git):
-   - Create `leads.csv` with headers: `email,first_name,subject`
-   - Create `templates.txt` with 1–N HTML templates separated by a line containing `---`
-5. **Run a test:**
-   ```bash
-   python main.py --campaign "Test-001" --limit 3
-   ```
+```bash
+git clone https://github.com/SoraPewnaldo/Gmail-Campaigner.git
+cd Gmail-Campaigner
+pip install -r requirements.txt
+```
 
-## Open Tracking + Unsubscribe (Optional)
-1. Open **appsscript.gs** in Google Apps Script.
-2. Deploy as **Web app** with *Anyone with the link*.
-3. Put the **deployment URL** into `config.json` as `WEBAPP_URL` and set `TRACK_OPENS` to `true`.
+2. **Set up Google API Credentials**  
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)  
+   - Create a new project and enable Gmail API  
+   - Download `credentials.json` and place it in the project root  
 
-## Important
-- **Do NOT commit** `credentials.json`, `token.pickle`, `config.json`, `leads.csv`, `templates.txt`, or any real data.
-- Respect Gmail limits (≈500/day free Gmail, ≈2000/day Workspace).
-"# Gmail-Gampaigner" 
-"# Gmail-Campaigner" 
+3. **Prepare your leads**  
+   - Put them in `leads.csv` with headers like `first_name,email`  
+
+4. **Write your templates**  
+   - Save them in `templates.txt` separated by `---`  
+
+5. **Run the script**  
+```bash
+python main.py
+```
+
+## License
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Contributing
+PRs are welcome! Open an issue for suggestions or bug reports.
+
+---
+Made with ❤️ by [SoraPewnaldo](https://github.com/SoraPewnaldo)

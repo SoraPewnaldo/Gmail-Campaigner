@@ -1,14 +1,15 @@
-# Sensitive / local files
-credentials.json
-token.pickle
-config.json
-leads.csv
-templates.txt
-*.xlsx
-*.csv
-# Byte-compiled / caches
+# Python cache
 __pycache__/
-*.py[cod]
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Gmail credentials
+credentials.json
+token.json
+
 # OS files
 .DS_Store
 Thumbs.db

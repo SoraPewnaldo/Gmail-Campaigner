@@ -1,0 +1,11 @@
+{
+  "FROM_NAME": "Your Name",
+  "FROM_EMAIL": "yourname@gmail.com",
+  "BATCH_DELAY_SECONDS_MIN": 7,
+  "BATCH_DELAY_SECONDS_MAX": 20,
+  "MAX_PER_RUN": 50,
+  "WEBAPP_URL": "https://script.google.com/macros/s/DEPLOYMENT_ID/exec",
+  "FOOTER_SIGNATURE": "Best regards,\\nYour Name\\nYour Company",
+  "UNSUB_TEXT": "No interest? Unsubscribe here",
+  "TRACK_OPENS": true
+}

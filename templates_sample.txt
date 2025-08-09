@@ -1,0 +1,9 @@
+Hi {{first_name}},<br><br>
+I came across your Instagram recently and really enjoyed your content. I'm a freelance editor who helps creators improve watch time with tighter pacing, color, and sound. My rate is $50/edit. Open to a quick chat?<br><br>
+Best,<br>
+Your Name
+---
+Hi {{first_name}},<br><br>
+Loved your recent reels. I can help you add subtle color grading, sound balancing, and pacing tweaks that lift engagement without changing your style. $50/edit, fast turnaround. Up for a quick call?<br><br>
+Best,<br>
+Your Name

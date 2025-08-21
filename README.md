@@ -17,7 +17,7 @@
 
 ---
 
-# Free Gmail Campaigner (GitHub-Safe)
+# Free Gmail Campaigner
 
 Lightweight Gmail outreach sender using Gmail API + HTML templates.
 
